@@ -1,0 +1,14 @@
+/* Import das fonts */
+@font-face {
+    font-family:Titilliumweb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile First */
+
