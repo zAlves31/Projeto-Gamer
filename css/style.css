@@ -1,14 +1,69 @@
-/* Import das fonts */
+/* import das fonts */
 @font-face {
-    font-family:Titilliumweb-Black;
+    font-family: TitilliumWeb-Black;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Mobile First */
+body {
+    background-color: black;
+    color: white;     
+}
+
+/* classes genericas */
+
+.layout-grid {
+    border: 1 px solid salmon;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* mobile first */
+
+/* header */
+header {
+    height: 60px;
+    background-color: black;
+}
+
+/* header top */
+header .header-top {
+    display: none;
+}
+
+/* header-bottom */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom .logo {
+    width: 86px;
+}
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border: 1px solid white;
+}
+header .header-bottom .menu-usuarios {
+    display: none;
+}
 
