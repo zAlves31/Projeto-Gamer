@@ -6,6 +6,11 @@
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
 
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
 /* INTER */
 @font-face {
     font-family: Inter;
@@ -38,6 +43,14 @@ body {
     height: 100%;
     margin: 0 auto;
 }
+
+/* Linha *
+    margin-bottom: 40px;
+    width: 545px;
+    height: 2px;
+    background-color: #FFAF00;
+}
+
 
 /* justify content + align items */
 .alinhamento-between-center {
@@ -78,7 +91,7 @@ header .header-bottom img.logo {
 header .header-bottom nav {
     position: fixed;
     top: 60px;
-    left: -80vw; 
+    left: -80vw;
     width: 80vw;
     height: calc(100vh - 60px);
 
@@ -108,7 +121,7 @@ header .header-bottom nav > a:last-of-type {
     border-bottom: none;
 }
 
-/* ícone de mídias sociais possibilidade position 
+/* ícone de mídias sociais possibilidade position
 header .header-bottom nav .midias-sociais {
     position: absolute;
     bottom: 20px;
@@ -145,7 +158,7 @@ header .header-bottom .menu-usuarios {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
-    
+
     transition: right 0.4s;
 }
 
@@ -161,6 +174,8 @@ main{
 
     justify-content: space-between;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 
     background-color: rebeccapurple;
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
@@ -177,5 +192,113 @@ main{
 
 .banner .botao-sobre {
     width: 171px;
-    
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    text-decoration: none;
+    font-family:TitilliumWeb-Bold ;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+/* Sessao Jogos */
+.jogos {
+    background-color: #1B1426;
+    width: 375px;
+    height: 590px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Sessao Times */
+
+.times {
+    background-color:#F9AA01 ;
+    width: 375px;
+    height: 1535px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.times h1{
+    color: #1B1426;
+    font-family:TitilliumWeb-Black ;
+    font-size: 18px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+#linha {
+    margin-top: 40px;
+    width: 204px;
+    height: 2px;
+    background-color: #1B1426;
+}
+
+
+
+/* Tablets */
+@media screen and (min-width:768px) {
+
+}
+
+
+
+/* Desktops >=1200px */
+@media screen and (min-width:768px) {
+    .layout-grid{
+        width: 100%;
+        max-width: 1200px;
+
+        border: 3px dotted yellowgreen;
+    }
+}
+
+/* HEADER */
+header{
+    position: static;
+    height: 140px;
+}
+
+header .menu-hamburguer,
+header .menu-pontinhos,
+header .header-bottom nav .phone,
+header .header-bottom nav .email,
+header .header-bottom nav .midias-sociais{
+    display:none;
+}
+
+header .header-bottom img.logo{
+    width:200px;
+}
+
+header .header-bottom nav {
+    position: static;
+    width: 440px;
+    height: 50px;
+    flex-direction: row;
+    background-color: red;
+}
+
+header .header-bottom .menu-usuarios{
+    position: static;
+    flex-direction: row;
+    width: 180px;
+    height: 50px;
+    background-color: transparent;
+}
+
+/* MAIN */
+main{
+    margin-top: 0;
 }
