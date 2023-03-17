@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Gamer Manhã</title>
-    <link rel="stylesheet" href="../Projeto-Senai/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <header>
 
+        <!-- linha de cima com a borda amarela -->
         <div class="header-top">
-            <div class="layout-grid">
+            
+            <div class="layout-grid alinhamento-between-center">
                 <div class="contatos">
                     <div class="phone">
-                        <img src="../Projeto-Senai/assets/icones/icone_telefone.svg" alt="Ícone de telefone">
+                        <img src="./assets/icones/icone_telefone.svg" alt="Ícone de telefone">
                         <span>(11) 0900-1010</span>
                     </div>
                     <div class="email">
-                        <img src="../Projeto-Senai/assets/icones/icone_email.svg" alt="Ícone de e-mail">
+                        <img src="./assets/icones/icone_email.svg" alt="Ícone de e-mail">
                         <span>contato@gamer.com.br</span>
                     </div>
                 </div>
@@ -58,7 +60,8 @@
                     <!-- visível apenas no mobile -->
 
                     <a class="phone">
-                        <img src="./assets/icones/icone_telefone.svg" alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
+                        <img src="./assets/icones/icone_telefone.svg"
+                            alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
                         <span>(11) 0900-1010</span>
                     </a>
                     <a class="email">
@@ -80,7 +83,7 @@
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img onclick="menulateral()"  src="./assets/icones/3pontinhos.svg" class="menu-pontinhos"
+                <img onclick="mostrarUsuarios()" src="./assets/icones/3pontinhos.svg" class="menu-pontinhos"
                     alt="Ícone 3 pontinhos, abre o menu de usuários">
 
                 <div class="menu-usuarios" id="menu-usuarios">
@@ -98,16 +101,19 @@
         </div>
     </header>
 
+
     <main>
         <section class="banner">
             <h1>Liga Gamers</h1>
-            <a href="" class="botao-sobre">Sobre</a href="">
+            <a href="" class="botao-sobre">Sobre</a>
         </section>
 
         <section class="jogos">
-            <img src="../Projeto-Senai/assets/images/Group Fifa.png" alt="imagem do jogo fifa">
+            <div class="layout-grid jogos-flex">
+                <img src="./assets/images/Group Fifa.png" alt="Imagem do jogo Fifa 2023">
+                <img src="./assets/images/Group Cs.png" alt="Imagem do jogo Counter Strike">
+            </div>
 
-            <img src="../Projeto-Senai/assets/images/Group Cs.png" alt="imagem do jogo counter strike">
         </section>
 
         <section class="times">
@@ -119,19 +125,110 @@
             <img id="Personagem2" src="../Projeto-Senai/assets/images/lp-gamer-home_0000s_0000s_0002_lol-cabelo-azul.png" alt="personagem de cabelo azul com arma de tubarao na mao">
 
         </section>
+
+
     </main>
+
+    <footer>
+        <div class="layout-grid footer-top">
+            
+            <div id="Sobre">
+                <img src="./assets/images/logotipo-gamer.svg" alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
+
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+                
+                <div id="midias-sociais-footer">
+                    <a href="">
+                        <img src="./assets/icones/icone_facebook_footer.svg" alt="Icone do Facebook">
+                    </a>
+
+                    <a href="">
+                        <img src="./assets/icones/icone_linkedin_footer.svg" alt="Icone do Linkedin">
+                    </a>
+
+                    <a href="">
+                        <img src="./assets/icones/icone_intagram_footer.svg" alt="Icone do Instagram">
+                    </a>
+
+                </div>
+            </div>
+            <div id="links-uteis">
+                <div class="titulos-footer">
+                    <h3>Links Uteis</h3>
+                </div>
+
+                <ul class="menu-footer">
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="">Jogadores</a>
+                    </li>
+
+                    <li>
+                        <a href="">Noticias</a>
+                    </li>
+   
+                    <li>
+                        <a href="">Login</a>
+                    </li>
+   
+                    <li>
+                        <a href="">Equipes</a>
+                    </li>
+   
+                </ul>
+            </div>
+            
+            <div id="contatos">
+                <div class="titulos-footer">
+                    <h3>Contatos</h3>
+                    <hr>
+                </div>
+
+                <p>
+                    <span class="contatos-titulo">localizaçao:</span>Rua Niteroi, 180 - Sao Caetano do Sul - SP     
+                </p>
+                    
+                <p>
+                    <span class="contatos-titulo">junte-se a nos:</span>contato@gamer.com.br
+                </p>
+
+                <p>
+                    <span class="contatos-titulo">Telefone:</span>(11 0900-1010)
+                </p>
+
+            </div>
+
+            <div id="newsletter">
+                <div class="titulos-footer">
+                    <h3>Contatos</h3>
+                    <hr>
+                </div>
+
+                <form action="" class="frm-news">
+                    <input type="email" placeholder="digite seu e-mail"> 
+                    <button>Enviar</button>
+                </form>
+            </div>
+            
+        </div>
+        <div>
+        <p id="rights">Todos os diretos reservados</p>
+        </div>
+
+        <img src="./assets/icones/Botao_voltar_ao_topo.svg" alt="Icone com a seta para cima, clique para voltar ao topo">
+    </footer>
 
     <script>
         function mostrarMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu");
-
         }
-
-        function menulateral() {
-            document.getElementById("menu-usuarios").classList.toggle("menu-lateral");
+        function mostrarUsuarios() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
         }
-
-        </script>
+    </script>
 </body>
 
 </html>
