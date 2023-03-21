@@ -128,19 +128,6 @@ header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
 
-/* ícone de mídias sociais possibilidade position 
-header .header-bottom nav .midias-sociais {
-    position: absolute;
-    bottom: 20px;
-    left: calc(50% - 100px);
-    border: 1px solid red;
-    width: 200px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-*/
 
 header .header-bottom nav .midias-sociais {
     /* border: 1px solid red; */
@@ -174,9 +161,9 @@ main {
 }
 
 /* Banner */
-.banner {
+.banner-login {
     width: 100%;
-    height: 606px;
+    height: 690px;
     padding: 40px 0;
 
     display: flex;
@@ -185,46 +172,10 @@ main {
     align-items: center;
 
     background-color: rebeccapurple;
-    background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
+    background-image: url(../assets/images/Banner_Login.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-}
-
-.banner h1 {
-    font-family: TitilliumWeb-Black;
-    font-size: 40px;
-    text-shadow: 0 0 7px #FD4255;
-
-}
-
-.banner .botao-sobre {
-    width: 171px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F9AA01;
-    color: #1B1426;
-    text-decoration: none;
-    font-family: TitilliumWeb-Bold;
-    font-size: 24px;
-    border-radius: 8px;
-}
-
-/* Sessão Jogos */
-main .jogos {
-    width: 100%;
-    height: 590px;
-    background-color: #1B1426;
-}
-
-main .jogos .jogos-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* vertical - column */
-    align-items: center;
 }
 
 /* Footer */
@@ -348,7 +299,7 @@ footer #newsletter input::placeholder {
     color: white;
 }
 
-footer #newsletter button {
+footer #newsletter button  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,12 +308,14 @@ footer #newsletter button {
     font-size: 16px;
 }
 
-
-
-
-
-
-
+.banner-login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
 
 /* Tablets >= 768px*/
 @media screen and (min-width: 768px) {}
@@ -468,34 +421,4 @@ footer #newsletter button {
     main {
         margin-top: 0;
     }
-
-    /* Banner */
-    main .banner {
-        height: 722px;
-        /* alterar a imagem de fundo */
-        background-image: url(../assets/images/Banner_background_1.png);
-        background-size: cover;
-        background-position: top;
-
-    }
-
-    main .banner h1 {
-        font-size: 80px;
-    }
-
-    /* Sessão de Jogos */
-    main .jogos {
-        height: 500px;
-    }
-
-    main .jogos .jogos-flex {
-        flex-direction: row;
-    }
-
-    main .jogos .jogos-flex img {
-        width: 555px;
-    }
-
 }
-
-
