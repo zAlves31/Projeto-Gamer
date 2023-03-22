@@ -172,12 +172,37 @@ main {
     align-items: center;
 
     background-color: rebeccapurple;
-    background-image: url(../assets/images/Banner_Login.png);
+    background-image: url(../assets/images/banner\ login\ mobile.PNG);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
+.banner-login h1 {
+    font-family:TitilliumWeb-Black;
+    font-size: 28px;
+}
+
+.banner-login hr{
+    border: 2px solid #F9AA01;
+    width: 90px;
+}
+
+#box-preta{
+    width: 335px ;
+    height: 462px;
+    background-image: linear-gradient(to left bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
+    backdrop-filter: blur(5px);
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+
+    display: flex;;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+  
 /* Footer */
 footer {
     padding-top: 60px;
