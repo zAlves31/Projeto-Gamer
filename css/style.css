@@ -1,4 +1,4 @@
-/* imports das fontes */
+/*********** imports das fontes ***********/
 
 /* TITILLIUM WEB */
 @font-face {
@@ -61,9 +61,9 @@ body {
     align-items: center;
 }
 
-/* Mobile First */
+/********** Mobile First **********/
 
-/* HEADER */
+/********** HEADER **********/
 header {
     position: fixed;
     top: 0;
@@ -74,12 +74,12 @@ header {
     background-color: #1B1426;
 }
 
-/* Header Top */
+/********** Header Top **********/
 header .header-top {
     display: none;
 }
 
-/* Header Bottom */
+/********** Header Bottom **********/
 
 
 header .header-bottom {
@@ -107,7 +107,7 @@ header .header-bottom nav {
     transition: left 0.4s;
 }
 
-/* somente links "filhos diretos" */
+/********** somente links "filhos diretos" **********/
 header .header-bottom nav>a {
     padding: 30px 0;
     color: white;
@@ -128,19 +128,7 @@ header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
 
-/* ícone de mídias sociais possibilidade position 
-header .header-bottom nav .midias-sociais {
-    position: absolute;
-    bottom: 20px;
-    left: calc(50% - 100px);
-    border: 1px solid red;
-    width: 200px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-*/
+
 
 header .header-bottom nav .midias-sociais {
     /* border: 1px solid red; */
@@ -150,7 +138,7 @@ header .header-bottom nav .midias-sociais {
     gap: 50px;
 }
 
-/* menu lateral direito - ícones */
+/********** menu lateral direito - ícones **********/
 header .header-bottom .menu-usuarios {
     position: fixed;
     top: 60px;
@@ -168,12 +156,12 @@ header .header-bottom .menu-usuarios {
     transition: right 0.4s;
 }
 
-/* MAIN */
+/********** MAIN **********/
 main {
     margin-top: 60px;
 }
 
-/* Banner */
+/********** Banner **********/
 .banner {
     width: 100%;
     height: 606px;
@@ -212,7 +200,7 @@ main {
     border-radius: 8px;
 }
 
-/* Sessão Jogos */
+/********** Sessão Jogos **********/
 main .jogos {
     width: 100%;
     height: 590px;
@@ -227,7 +215,121 @@ main .jogos .jogos-flex {
     align-items: center;
 }
 
-/* Footer */
+
+
+/********** Sessao de Equipes **********/
+section.Equipes {
+    background-color: #F9AA01;
+}
+
+section.Equipes .equipes-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+}
+
+section.Equipes h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+section.Equipes hr {
+    width: 50%;
+    margin: 0 auto 60px;
+    border: 1px solid #000;
+}
+
+section.Equipes .Box-jogos {
+    position: relative;
+    margin-bottom: 20px;
+    /* border: 1px solid #EC4358;  */
+    
+}
+
+section.Equipes .equipes-flex .Box-jogos #Jogos-diferentes {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+section.Equipes .equipes-flex .Box-jogos #professores {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+section.Equipes .Box-jogos .Card .Box-roxa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 231px;
+    height: 300px;
+    padding: 25px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+section.Equipes .Card .Box-roxa h3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: TitilliumWeb-Black;
+    text-align: justify;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.Card .Box-roxa p {
+    font-family: Quicksand;
+    text-align: justify;
+    font-size: 13px;
+}
+
+
+/********** Noticias **********/
+
+section.noticias {
+    background-image: url(../assets/images/backgrund_notícias.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 20px 20px;
+}
+
+section.noticias .noticias-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.noticias .noticias-flex h2 {
+   width: 100px;
+   font-family:TitilliumWeb-Black;
+   font-size: 18px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+section.noticias div hr {
+    width: 204px;
+    margin: 30px 80px;
+    border: 1px solid #F9AA01;
+}
+
+/********** Footer **********/
 footer {
     padding-top: 60px;
     padding-bottom: 30px;
