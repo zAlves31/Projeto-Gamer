@@ -161,7 +161,7 @@ main {
 }
 
 /* Banner */
-.banner-login {
+section.cadastro {
     width: 100%;
     height: 690px;
     padding: 40px 0;
@@ -178,32 +178,106 @@ main {
     background-position: bottom;
 }
 
-.banner-login h1 {
+section.cadastro .Box-login{
+   padding-top: 60px; 
+}
+
+section.cadastro .titulo-login h1 {
     font-family:TitilliumWeb-Black;
     font-size: 28px;
 }
 
-.banner-login hr{
-    border: 2px solid #F9AA01;
+section.cadastro hr{
+    border: 3px solid #F9AA01;
     width: 90px;
 }
 
-#box-preta{
-    width: 335px ;
+section.cadastro .box-login { 
+    width: 100%;
+    width: 335px;
     height: 462px;
-    background-image: linear-gradient(to left bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
-    backdrop-filter: blur(5px);
-    border: 2px solid transparent;
+    padding: 1px;
     border-radius: 8px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.05));
 
-
-    display: flex;;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
+
+.forms-cadastro {
+    width: 335px;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px 20px 35px;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(27, 20, 38, .5), rgba(27, 20, 38, .2));
+    backdrop-filter: blur(8px); 
+    border-radius: 8px;
+    
+    
+}
+
+.forms-cadastro .titulo-login {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: TitilliumWeb-Black;
+
+}
+
+.forms-cadastro .login-linha hr {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px solid #F9AA01;
+}
+
+.forms-cadastro .box-cadastro {
+    width: 100%;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, 0.1));
+    border-radius: 10px;
+}
+
+.forms-cadastro .box-cadastro {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, .1));
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+}
+
+.forms-cadastro .box-cadastro input {
+    width: 85%;
+    height: 40px;
+    background-color: transparent;
+    font-family: TitilliumWeb-Regular;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.forms-cadastro .box-cadastro input::placeholder {
+    color: white;
+}
+
+
+
+.forms-cadastro .botao-logar {
+    width: 100%;
+    height: 40px;
+    font-family: TitilliumWeb-Bold;
+    font-size: 1.5rem;
+    background-color: #F9AA01;
+    border-radius: 8px;
+    border: 1px solid #F9AA01;
+}
+
   
-/* Footer */
+/************ Footer ************/
 footer {
     padding-top: 60px;
     padding-bottom: 30px;

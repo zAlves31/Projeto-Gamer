@@ -319,6 +319,7 @@ section.noticias .noticias-flex h2 {
    width: 100px;
    font-family:TitilliumWeb-Black;
    font-size: 18px;
+   align-items: center;
    text-align: center;
    text-transform: uppercase;
 }
@@ -327,6 +328,31 @@ section.noticias div hr {
     width: 204px;
     margin: 30px 80px;
     border: 1px solid #F9AA01;
+}
+
+section.noticias .box-noticia {
+    max-width: 335px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right bottom, rgba(37, 26, 52, .34), rgba(5, 1, 12, .79));
+    border-radius: 8px;
+}
+
+section.noticias .box-noticia img {
+    width: 100%;
+}
+
+section.noticias .box-noticia h3 {
+    margin: 20px 10px;
+    font-family: TitilliumWeb-Bold;
+    font: size 24px;;
+    text-align: left;
+}
+
+section.noticias .box-noticia p {
+    margin: 20px 10px;
+    font-family: Quicksand-Regular;
+    text-align: justify;
+    font-size: 16px;
 }
 
 /********** Footer **********/
@@ -585,7 +611,7 @@ footer #newsletter button {
         font-size: 80px;
     }
 
-    /* Sessão de Jogos */
+/*********** Sessão de Jogos ***********/
     main .jogos {
         height: 500px;
     }
@@ -597,6 +623,9 @@ footer #newsletter button {
     main .jogos .jogos-flex img {
         width: 555px;
     }
+
+
+/************ Sessao Equipes ************/
 
 }
 
